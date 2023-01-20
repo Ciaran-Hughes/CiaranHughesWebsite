@@ -1,0 +1,82 @@
+.var-highlight {
+  color: #1276ce;
+}
+
+.string-highlight {
+  color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter {
+  position: absolute;
+  font-size: 26px;
+  margin: 0;
+  height: auto;
+  /* display: none; */
+  font-family: "Courier New";
+}
+
+@media (max-width: 800px) {
+  #typewriter {
+    font-size: 3.4vw;
+    font-weight: 700;
+    left: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  #typewriter {
+    font-size: 3.3vw;
+  }
+}
+@media (max-width: 470px) {
+  #typewriter {
+    font-size: 3.4vw;
+  }
+}
+
+@media (max-width: 430px) {
+  /* #typewriter {
+    font-size: 14px;
+  } */
+}
+
+@media (max-width: 380px) {
+  /* #typewriter {
+    /* font-size: 3.2vw; */
+  } */
+  .hero-name h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* #typewriter:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/*# sourceMappingURL=additionalstyles.css.map */

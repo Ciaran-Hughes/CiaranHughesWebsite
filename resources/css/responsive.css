@@ -1,0 +1,399 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.p-0 {
+  padding: 0;
+}
+
+.block-row {
+  max-width: 1140px !important;
+  margin: auto auto !important;
+  display: block !important;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+.font-40px {
+  font-size: 40px;
+}
+
+.font-45px {
+  font-size: 45px;
+}
+.font-26px {
+  font-size: 26px;
+}
+
+.font-30px {
+  font-size: 30px;
+}
+
+.margin-center {
+  margin: auto;
+  width: 50%;
+}
+
+.vh-70 {
+  height: 70vh;
+}
+.w-100 {
+  width: 100%;
+}
+.ml-4percent {
+  margin-left: 4% !important;
+}
+.ml-2 {
+  margin-left: 2.2rem;
+}
+.font-32px {
+  font-size: 32px;
+}
+.hero-name {
+  padding: 5px;
+  font-size: 1rem;
+}
+.margin-top-hero {
+  margin-top: 5rem;
+}
+
+.hero-name h1 {
+  color: #555 !important;
+  text-align: center;
+  /* margin: 0;*/
+  line-height: 0.3;
+}
+
+/* .person-image-img {
+  object-position: 0px -11px;
+  margin-left: 9rem;
+} */
+a {
+  text-decoration: underline;
+}
+
+.cern {
+  display: flex;
+  position: absolute;
+  top: 11%;
+  left: 49%;
+  width: 35%;
+}
+
+.krak {
+  display: flex;
+  position: absolute;
+  top: 37%;
+  left: 44%;
+  width: 50%;
+}
+.fermilab {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  width: 100%;
+  height: 10%;
+}
+
+.cambridge {
+  display: flex;
+  position: absolute;
+  top: 75%;
+  left: 44%;
+  width: 100%;
+  height: 10%;
+}
+
+.cambridge__masters {
+  display: flex;
+  position: absolute;
+  top: 95%;
+  left: 30%;
+  width: 100%;
+  height: 10%;
+}
+
+.cv {
+  position: absolute;
+  top: 125%;
+  left: 43%;
+  width: 12%;
+}
+
+.contact-page {
+  padding-left: 17%;
+}
+.book-page-header {
+  /* overflow-y: scroll;
+   */
+  height: auto;
+}
+.book__image__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book__image {
+  height: 450px;
+}
+.sticky-image {
+  /* position: -webkit-sticky;
+  position: fixed;
+  top: 130px;
+  left: 135px; */
+
+  position: -webkit-sticky;
+  position: fixed;
+  top: 130px;
+  left: 13%;
+  top: 28%;
+  right: 50%;
+  /* transform: translate(50%,-50%) !important; */
+}
+
+.research-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 2rem;
+}
+
+.hero-name-text {
+  margin-bottom: 3rem;
+}
+.h2font-span {
+  font-size: 25px;
+}
+
+.absolute-image {
+  position: absolute;
+  top: 602px;
+  left: 130px;
+}
+
+.president__image {
+  height: 200px;
+}
+.book__desc {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.cern-div {
+  flex: 3;
+  padding-left: 5%;
+  padding-top: 8%;
+}
+.particle__image {
+  background-color: #fff;
+}
+.person-image-img {
+  height: 300px !important;
+  width: auto !important;
+  float: right;
+  border-radius: 50%;
+}
+
+.ai__data__text__container {
+  flex: 1.6;
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .margin-four {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    min-height: 100vh;
+    height: auto;
+  }
+  .cern {
+    position: static;
+  }
+
+  .krak {
+    position: static;
+  }
+  .fermilab {
+    position: static;
+  }
+
+  .cambridge {
+    position: static;
+  }
+
+  .cambridge__masters {
+    position: static;
+  }
+
+  .cv {
+    position: static;
+  }
+  .person-image-aboutme {
+    position: static;
+    float: none;
+  }
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container > .person-image {
+    order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+  }
+  .hero-name-text {
+    margin-bottom: 1rem !important;
+  }
+  h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 200px;
+    margin: 0 20%;
+    margin-top: 30px;
+  }
+  .hero-name h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-name h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .home-header {
+    height: 110vh;
+  }
+  .ciaran-hughes-home {
+    margin-right: 0;
+  }
+
+  .contact-page {
+    padding-left: 5%;
+  }
+  .book__image {
+    height: 359px;
+  }
+  .sticky-image {
+    position: static;
+  }
+  .absolute-image {
+    position: static;
+  }
+  h1aboutme1 {
+    font-size: 1.3rem;
+    padding-top: 4rem;
+  }
+
+  .margin-top-hero {
+    margin-top: 0;
+  }
+  .cv {
+    width: 45%;
+  }
+  .krak {
+    width: 100%;
+  }
+  .cern {
+    width: auto;
+    padding: 0 2rem;
+  }
+  h1aboutmecern,
+  h1aboutmekrak,
+  .h2font,
+  .h2font-span {
+    font-size: 1rem !important;
+  }
+
+  .about__me__textbox {
+    flex: auto;
+  }
+  .cern-div {
+    padding-top: 20%;
+  }
+  .ai__data__text__container {
+    flex: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  .margin-center {
+    margin: auto;
+    width: 80%;
+  }
+  .research-icon {
+    display: block;
+    height: 150px;
+    width: auto;
+  }
+  .book__desc {
+    padding: 0 1rem;
+  }
+  h1aboutmecern {
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    /* height: 100%; */
+    /* width: auto; */
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100%;
+    background: url(../../resources/img/blue.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    position: relative;
+    behavior: url(PIE.htc);
+    padding: 3rem;
+  }
+  .research-hero {
+    margin-top: 40% !important;
+  }
+  .works-step ul {
+    margin-bottom: 45px;
+  }
+  h1aboutmekrak {
+    padding: 4rem;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero-name h1 {
+    font-size: 1.5rem;
+  }
+}
